@@ -1,5 +1,5 @@
 #include "global.h"
-#include "simbolos.c"
+#include "analsint.c" 
 #include "analizsint.c"
 
 int main(){
