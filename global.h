@@ -10,25 +10,25 @@
 
 #define NUM     256
 #define DIV     257
-#define MOD     258
-#define ID      259
-#define FIN     260
-#define MAXLEX	999
-#define MAXSIMN	100
+#define MOD     258 //modulo
+#define ID      259 //identificador
+#define FIN     260 //fin de archivo
+#define MAXLEX	999 //tamaño maximo de lexemas
+#define MAXSIMN	100 //maximo numero de simbolos
 
 
 
-void analsint();
-extern int valcomplex;
-extern int numlinea;
+void analsint(); //analizador sintactico
+extern int valcomplex; //valor compilador lexico
+extern int numlinea; //numero de linea
 
-struct entrada {
+struct entrada { //estructura entrada para tabla de simbolos
 	
-	char *aplex;
-	int complex;
+	char *aplex; //lexema
+	int complex; //codigo lexico.
 };
 
-extern struct entrada tablasimb[999];
+extern struct entrada tablasimb[999]; //tabla de simbolos
 
 int inic();
 int error(char *);

@@ -3,7 +3,7 @@
 #include "analizsint.c"
 
 int main(){
-    inic();
+    inic(); 
     analsint(); 
     return 0;
 }
