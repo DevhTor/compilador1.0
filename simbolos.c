@@ -4,6 +4,7 @@
 #include <ctype.h>
 #include <stdlib.h>
 #include <string.h>
+#include "error.c"
 
 
 char lexemas[MAXLEX];
@@ -44,6 +45,9 @@ int clex;
 
 
 //analizlex.c
+
+//#include "error.c"
+
 char buflex[TAMBUFF];
 int numlinea = 1;
 int valcomplex= NINGUNO;
@@ -89,18 +93,13 @@ int analex()
 	}
 }
 
-//error.c
-int error(char *m) /* genera todos los mensajes de error */
-{
-  fprintf(stderr, "línea %d: %s \n", numlinea, m);
 
-  exit(1); /* terminación sin éxito */
-}
 
 
 //analsint
 
 #include "emisor.c"
+//#include "error.c"
 
 void analsint() {
 	
